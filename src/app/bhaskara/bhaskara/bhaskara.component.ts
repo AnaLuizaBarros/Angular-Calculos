@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'bha-bhaskara',
@@ -9,8 +9,8 @@ import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms'
 export class BhaskaraComponent implements OnInit {
 
   BhaskForm: FormGroup;
-  X: number;
-  XX: number;
+  XL1: number;
+  XL2: number;
   constructor( private fb: FormBuilder) {
 
    }
@@ -19,17 +19,15 @@ export class BhaskaraComponent implements OnInit {
     this.BhaskForm = this.fb.group({
       A: this.fb.control(''),
       B: this.fb.control(''),
-      Delta: this.fb.control(''),
-      X1: this.fb.control(''),
-      X2: this.fb.control(''),
+      Delta: this.fb.control('')
     }), { Validators: Validators.required }
 
 
   }
 
   Bhas(a: number, b: number, delta: number): void{
-    this.X =  - (b + Math.sqrt(delta)) / ( 2 * a );
-    this.XX = -(b - Math.sqrt(delta)) / ( 2 * a );
+    this.XL1 =  - (b + Math.sqrt(delta)) / ( 2 * a );
+    this.XL2 = -(b - Math.sqrt(delta)) / ( 2 * a );
 
   }
 

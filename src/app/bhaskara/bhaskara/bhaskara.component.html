@@ -1,8 +1,7 @@
 
-
 <h1>Bhaskcara</h1>
 <p>Como e realizada: </p>
-<b> colocar imagem </b>
+<img src="" alt="imagem">
 <form [formGroup]="BhaskForm" (ngSubmit)="Bhas(BhaskForm.value.A, BhaskForm.value.B, BhaskForm.value.Delta)">
   <table>
     <tr>
@@ -23,11 +22,12 @@
         <input type="number" formControlName="Delta">
       </td>
     </tr>
-   <button type="submit">Teste</button>
-    <input type="number" formControlName="X1" value="{{X}}">
-    <input type="number" formControlName="X2" value="{{XX}}">
 
-
+   <button type="submit">Calcular Bhaskara</button>
+   <div>
+    Valor de X' <input type="number" disabled value="{{XL1}}"><br>
+    Valor de X'' <input type="number" disabled value="{{XL2}}">
+  </div>
   </table>
 </form>
 
