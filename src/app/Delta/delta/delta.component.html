@@ -1,1 +1,28 @@
-<p>delta works!</p>
+<h1>Delta</h1>
+<p>Como e feito: </p>
+<b>Colocar imagem</b>
+<form [formGroup]="DeltaForm" (ngSubmit)="CallDelta(DeltaForm.value.A, DeltaForm.value.B, DeltaForm.value.C)">
+  <tr>
+    <td>
+      Valor de A <input type="number" formControlName="A">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Valor de B <input type="number" formControlName="B">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Valor de C <input type="number" formControlName="C">
+    </td>
+  </tr>
+  <button type="submit">Calular Delta</button>
+
+  <div>
+    Delta: <input type="number" disabled value="{{Delta}}">
+  </div>
+  <div *ngIf="DeltaForm.valid">
+    <p>Oi</p>
+  </div>
+</form>
