@@ -3,9 +3,9 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BhaskaraComponent } from './bhaskara/bhaskara/bhaskara.component';
+import { BhaskaraComponent } from './Calculos/bhaskara/bhaskara.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
-import { DeltaComponent } from './Delta/delta/delta.component';
+import { DeltaComponent } from './Calculos/delta/delta.component';
 import { HeaderComponent } from './Header/header/header.component';
 import { HomeComponent } from './Home/home/home.component';
 

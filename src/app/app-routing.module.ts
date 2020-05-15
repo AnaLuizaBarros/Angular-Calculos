@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { BhaskaraComponent } from './bhaskara/bhaskara/bhaskara.component';
-import { DeltaComponent } from './Delta/delta/delta.component';
+import { BhaskaraComponent } from './Calculos/bhaskara/bhaskara.component';
+import { DeltaComponent } from './Calculos/delta/delta.component';
 import { HomeComponent } from './Home/home/home.component';
 
 
