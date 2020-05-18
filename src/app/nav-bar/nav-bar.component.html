@@ -1,0 +1,25 @@
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(193, 255, 193);">
+  <a class="navbar-brand" href="#">Calculos</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#NavDropDown"
+  aria-expanded="false">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="NavDropDown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item dropdown"   >
+        <a class="nav-link dropdown-toggle" href="#" id="DropDownLink" role="button" data-toggle="dropdown" (mouseover)="ChangeState()" >Calculos Disponiveis</a>
+        <div class="dropdown-menu" aria-labelledby="DropDownLink" [@hover]="currentState" >
+          <a class="dropdown-item" [routerLink]="['/delta']">Delta</a>
+          <a class="dropdown-item" [routerLink]="['/bhaskara']">Bhaskara</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
