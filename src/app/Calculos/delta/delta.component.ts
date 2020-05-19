@@ -15,9 +15,9 @@ export class DeltaComponent implements OnInit {
 
   ngOnInit(): void {
     this.DeltaForm = this.fb.group({
-      A: this.fb.control(''),
-      B: this.fb.control(''),
-      C: this.fb.control(''),
+      'A': this.fb.control(''),
+      'B': this.fb.control(''),
+      'C': this.fb.control(''),
     }),{ Validators: Validators.required }
 
   }

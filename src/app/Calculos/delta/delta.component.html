@@ -2,27 +2,23 @@
 <p>Como e feito: </p>
 <b>Colocar imagem</b>
 <form [formGroup]="DeltaForm" (ngSubmit)="CallDelta(DeltaForm.value.A, DeltaForm.value.B, DeltaForm.value.C)">
-  <tr>
-    <td>
-      Valor de A <input type="number" formControlName="A">
-    </td>
-  </tr>
-  <tr>
-    <td>
-      Valor de B <input type="number" formControlName="B">
-    </td>
-  </tr>
-  <tr>
-    <td>
-      Valor de C <input type="number" formControlName="C">
-    </td>
-  </tr>
-  <button type="submit">Calular Delta</button>
-
   <div>
-    Delta: <input type="number" disabled value="{{Delta}}">
+       <label>Valor de A:</label>
+       <input type="number" formControlName="A">
   </div>
-  <div *ngIf="">
-    <p>Oi</p>
+  <div>
+      <label>Valor de B:</label>
+      <input type="number" formControlName="B">
+  </div>
+  <div>
+    <label>Valor de C:</label>
+    <input type="number" formControlName="C">
+  </div>
+  <div class="button">
+    <button type="submit">Calular Delta</button>
+  </div>
+  <div>
+    <label>Valor de Delta:</label>
+    <input type="number" disabled value="{{Delta}}" >
   </div>
 </form>

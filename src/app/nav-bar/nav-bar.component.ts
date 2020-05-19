@@ -18,10 +18,10 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
          opacity: 0
       })),
       transition('close => open', [
-        animate('0.1s')
+        animate('1s')
       ]),
       transition('open => close', [
-        animate('0.3s')
+        animate('1s')
       ]),
     ]),
   ],
@@ -39,5 +39,7 @@ export class NavBarComponent implements OnInit {
 
 ChangeState(){
   this.currentState = this.currentState === 'open' ? 'close' : 'open';
+
 }
+
 }
