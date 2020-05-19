@@ -1,1 +1,52 @@
 .navbar .nav-item:hover .nav-link{ color: #fff;  }
+
+form{
+  /*Centralizar o form*/
+  margin: 0 auto;
+  width: 400px;
+  /*Para ver as bordas do form*/
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+}
+
+/*Espaço entra cada conjuntos do form*/
+form div + div{
+  margin-top: 1em;
+}
+
+label{
+ /*alinhamento e mesmo tamanho*/
+ display: inline-block;
+ text-align: left;
+ width: 100%;
+}
+
+input, textarea{
+  /*mesma fonte para todos*/
+  font: 1em sans-serif;
+
+  /*mesmo tamanho campos de texto*/
+  width: 300px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /*harmoniar o look das bordas do campo de texto*/
+
+  border: 1px solid #999;
+}
+
+
+input:focus{
+  /*destaque a elementos ativos*/
+  border-color: #000;
+}
+
+.button{
+  /*posicionar na mesma posiçaõ dos campos de texto*/
+  padding-left: 90px;
+}
+button{
+  /*margem de espaço entre as labels e campos de texto*/
+  margin-left: .5em;
+  font: center;
+}

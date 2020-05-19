@@ -4,30 +4,27 @@
 <img src="" alt="imagem">
 <form [formGroup]="BhaskForm" (ngSubmit)="Bhas(BhaskForm.value.A, BhaskForm.value.B, BhaskForm.value.Delta)">
   <table>
-    <tr>
-      <td>
-        Valor de A
-        <input type="number" formControlName="A">
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Valor de B
-        <input type="number" formControlName="B">
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Valor de Delta
-        <input type="number" formControlName="Delta">
-      </td>
-    </tr>
-
-   <button type="submit">Calcular Bhaskara</button>
-   <div>
-    Valor de X' <input type="number" disabled value="{{XL1}}"><br>
-    Valor de X'' <input type="number" disabled value="{{XL2}}">
-  </div>
+    <div>
+      <label>Valor de A:</label>
+      <input type="number" formControlName="A">
+    </div>
+    <div>
+      <label>Valor de B:</label>
+      <input type="number" formControlName="B">
+    </div>
+    <div>
+      <label>Valor de Delta:</label>
+      <input type="number" formControlName="Delta">
+    </div>
+    <div class="button">
+      <button type="submit">Calcular Bhaskara</button>
+    </div>
+    <div>
+     <label>Valor de X'</label>
+     <input type="number" disabled value="{{XL1}}"><br>
+     <label>Valor de X''</label>
+     <input type="number" disabled value="{{XL2}}">
+    </div>
   </table>
 </form>
 
