@@ -12,9 +12,10 @@
       <li class="nav-item active">
         <a class="nav-link" href="#">Home</a>
       </li>
-      <li class="nav-item dropdown"   (mouseenter)="ChangeState()"  (mouseleave)="ChangeState()" >
+      <li class="nav-item dropdown"   >
         <a class="nav-link dropdown-toggle" href="#" id="DropDownLink" role="button" data-toggle="dropdown">Calculos Disponiveis</a>
-        <div class="dropdown-menu" aria-labelledby="DropDownLink" [@hover]="currentState">
+        <div class="dropdown-menu" aria-labelledby="DropDownLink">
+          <a class="dropdown-item" [routerLink]="['/basico']">Basicos</a>
           <a class="dropdown-item" [routerLink]="['/delta']">Delta</a>
           <a class="dropdown-item" [routerLink]="['/bhaskara']">Bhaskara</a>
         </div>

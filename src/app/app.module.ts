@@ -8,6 +8,7 @@ import { DeltaComponent } from './Calculos/delta/delta.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './Home/home/home.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { BasicosComponent } from './Calculos/basicos/basicos.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     DeltaComponent,
     HomeComponent,
     NavBarComponent,
+    BasicosComponent,
 
   ],
   imports: [

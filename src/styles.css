@@ -49,4 +49,16 @@ button{
   /*margem de espaço entre as labels e campos de texto*/
   margin-left: .5em;
   font: center;
-}
+ }
+
+ .BHome{
+   border-radius: 5px;
+   cursor: pointer;
+   background-color: rgb(193, 255, 193);
+   color: black;
+ }
+ a{
+   color: #000;
+ }
+
+

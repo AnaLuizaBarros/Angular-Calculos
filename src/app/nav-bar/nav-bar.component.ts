@@ -29,7 +29,6 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
 })
 export class NavBarComponent implements OnInit {
 
- currentState =  'close';
 
   constructor() { }
 
@@ -37,9 +36,5 @@ export class NavBarComponent implements OnInit {
 
   }
 
-ChangeState(){
-  this.currentState = this.currentState === 'open' ? 'close' : 'open';
-
-}
 
 }
